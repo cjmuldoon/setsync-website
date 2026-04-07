@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service — SetSync</title>
+    <meta name="description" content="SetSync Terms of Service.">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <style>
+        :root {
+            --orange: #FF6B00;
+            --blue: #0066FF;
+            --bg: #0A0A0E;
+            --card: #141418;
+            --text: #FFFFFF;
+            --muted: rgba(255,255,255,0.6);
+            --border: rgba(0,102,255,0.2);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 10; }
+        .glow-orange { position: fixed; top: -200px; right: -200px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(255,107,0,0.08) 0%, transparent 70%); pointer-events: none; z-index: 0; }
+        .glow-blue { position: fixed; bottom: -200px; left: -200px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(0,102,255,0.08) 0%, transparent 70%); pointer-events: none; z-index: 0; }
+        .nav-logo-img { height: 36px; width: 36px; object-fit: contain; vertical-align: middle; margin-right: 8px; filter: drop-shadow(0 0 8px rgba(255,107,0,0.3)); }
+
+        /* Nav */
+        nav {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: 3px;
+            background: linear-gradient(90deg, var(--orange), #FF9A40);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            margin-left: 24px;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--orange); }
+
+        /* Content */
+        .legal {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+        .legal .back {
+            display: inline-block;
+            color: var(--orange);
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 32px;
+            transition: opacity 0.2s;
+        }
+        .legal .back:hover { opacity: 0.7; }
+        .legal h1 {
+            font-size: clamp(28px, 5vw, 40px);
+            font-weight: 900;
+            margin-bottom: 8px;
+        }
+        .legal .updated {
+            font-size: 14px;
+            color: var(--muted);
+            margin-bottom: 40px;
+        }
+        .legal h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 36px;
+            margin-bottom: 12px;
+            color: var(--orange);
+        }
+        .legal p {
+            font-size: 15px;
+            color: var(--muted);
+            margin-bottom: 16px;
+        }
+        .legal ul {
+            list-style: none;
+            margin-bottom: 16px;
+            padding-left: 0;
+        }
+        .legal li {
+            font-size: 15px;
+            color: var(--muted);
+            padding: 4px 0;
+        }
+        .legal li::before {
+            content: '- ';
+            color: var(--orange);
+            font-weight: bold;
+        }
+        .legal a.inline {
+            color: var(--blue);
+            text-decoration: none;
+        }
+        .legal a.inline:hover { text-decoration: underline; }
+        .legal strong { color: var(--text); }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 40px 0;
+            text-align: center;
+        }
+        footer p {
+            font-size: 13px;
+            color: var(--muted);
+            margin-bottom: 12px;
+        }
+        footer a {
+            color: var(--muted);
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 13px;
+        }
+        footer a:hover { color: var(--orange); }
+
+        @media (max-width: 600px) {
+            .legal { padding: 40px 20px 60px; }
+        }
+        @media (max-width: 500px) { nav .container { flex-wrap: wrap; gap: 8px; } nav a { margin-left: 0; margin-right: 12px; font-size: 12px; } .logo { font-size: 18px; } .nav-logo-img { height: 28px; width: 28px; } }
+    </style>
+</head>
+<body>
+    <div class="glow-orange"></div>
+    <div class="glow-blue"></div>
+    <nav style="position:relative;z-index:10;">
+        <div class="container">
+            <a href="/" class="logo"><img src="logo-icon.png" class="nav-logo-img" alt="">SET SYNC</a>
+            <div>
+                <a href="/#features">Features</a>
+                <a href="/#pricing">Pricing</a>
+                <a href="mailto:support@setsync.app">Support</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="legal">
+        <a href="/" class="back">&larr; Back to Home</a>
+        <h1>Terms of Service</h1>
+        <p class="updated">Effective date: 1 April 2026</p>
+
+        <p>These Terms of Service ("Terms") govern your use of the SetSync application developed by Craig Muldoon ("we", "us", "our"). By downloading, installing, or using SetSync, you agree to be bound by these Terms.</p>
+
+        <h2>1. Acceptance of Terms</h2>
+        <p>By accessing or using SetSync, you confirm that you have read, understood, and agree to these Terms. If you do not agree, you must not use the app.</p>
+
+        <h2>2. Description of Service</h2>
+        <p>SetSync is a video analysis application designed for strength athletes and coaches. It allows users to record training videos at 120fps or 240fps, import videos from their Photos library, and analyse movement using on-device pose estimation (19 joints) and bar path tracking. The app provides side-by-side and overlay video comparison, annotations, angle measurements, and rep counting. All video processing and analysis is performed on your device using Apple's Vision framework.</p>
+
+        <h2>3. Subscription Tiers and Pricing</h2>
+        <p>SetSync offers the following in-app purchases, managed entirely through Apple's App Store and StoreKit:</p>
+        <ul>
+            <li><strong>Pro</strong> — A$7.99 one-time purchase. Unlocks advanced analysis features.</li>
+            <li><strong>Pro+</strong> — A$2.99/month or A$19.99/year. Includes all Pro features plus additional capabilities.</li>
+            <li><strong>Coach</strong> — A$14.99/month or A$99.99/year. Includes all Pro+ features plus coach tools for managing athletes, creating templates, and building training programs.</li>
+        </ul>
+        <p>Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current billing period. You can manage or cancel subscriptions in your Apple ID account settings (Settings &gt; Apple ID &gt; Subscriptions). Refund requests must be directed to Apple, as all payment processing is handled by Apple. We do not collect or store any payment information. Prices may change; any price changes will take effect at the start of your next billing period after notice.</p>
+
+        <h2>4. Not Medical or Professional Advice</h2>
+        <p>SetSync is a video analysis tool, not a substitute for professional coaching, medical advice, or physiotherapy. The form feedback, angle measurements, pose analysis, and movement scores provided by the app are for informational purposes only. <strong>You are solely responsible for your own safety during any exercise or training activity.</strong> Consult a qualified professional before beginning any new exercise programme or if you have concerns about your form or physical condition.</p>
+
+        <h2>5. Coach-Athlete Features</h2>
+        <p>SetSync provides tools that allow coaches to work with athletes remotely. These features include creating movement templates with target angle ranges, rating athlete lifts, providing written feedback, building training programs, and reviewing submitted videos. If you use these features:</p>
+        <ul>
+            <li><strong>For coaches:</strong> You are solely responsible for the accuracy, safety, and appropriateness of any templates, programs, ratings, and feedback you provide through SetSync. You are responsible for ensuring your coaching complies with all applicable laws, professional standards, and duty-of-care obligations. SetSync is a communication and analysis tool; it does not verify coaching credentials or qualifications.</li>
+            <li><strong>For athletes:</strong> Any guidance, ratings, programs, or feedback you receive through SetSync's coach features represents the views of your coach, not of SetSync. You should independently assess whether any coaching advice is appropriate for your fitness level and physical condition.</li>
+            <li><strong>Relationship:</strong> The coach-athlete relationship exists between you and your coach. SetSync facilitates this relationship but is not a party to it. We are not responsible for the quality, accuracy, or safety of coaching provided through the app.</li>
+        </ul>
+
+        <h2>6. Video Uploads</h2>
+        <p>When you submit a lift to a coach, you may optionally upload a video. By uploading a video, you confirm that:</p>
+        <ul>
+            <li>You own the video or have the right to share it.</li>
+            <li>The video does not contain content that is illegal, harmful, or violates the rights of any third party.</li>
+            <li>You consent to the video being accessible to the coach you submitted it to.</li>
+        </ul>
+        <p>Uploaded videos are stored on Supabase servers (AWS infrastructure). Videos are limited to 50 MB and must be in MP4 format. We do not use uploaded videos for any purpose other than facilitating the coach-athlete relationship. You may request deletion of uploaded videos at any time by contacting <a href="mailto:support@setsync.app" class="inline">support@setsync.app</a>.</p>
+
+        <h2>7. User Content and Ownership</h2>
+        <p>You retain full ownership of all videos, annotations, pose data, training programs, and other content you create within SetSync. We do not claim any intellectual property rights over your content. By using the coach features, you grant the relevant coach (or athlete) a limited right to view and interact with the content you share through the app. This right ends when you remove the content or terminate the coach-athlete link.</p>
+
+        <h2>8. Acceptable Use</h2>
+        <p>You agree not to use SetSync to:</p>
+        <ul>
+            <li>Upload or share content that is illegal, abusive, defamatory, or infringes on the rights of others.</li>
+            <li>Impersonate another person or misrepresent your qualifications as a coach.</li>
+            <li>Attempt to access another user's data or interfere with the app's infrastructure.</li>
+            <li>Use the app for any purpose other than training video analysis and related coaching activities.</li>
+        </ul>
+
+        <h2>9. Intellectual Property</h2>
+        <p>The SetSync application, including its design, code, default movement templates, icons, themes, and documentation, is the intellectual property of Craig Muldoon. You may not copy, modify, distribute, reverse-engineer, or create derivative works from any part of the app except as permitted by applicable law.</p>
+
+        <h2>10. Limitation of Liability</h2>
+        <p>SetSync is provided on an <strong>"as-is" and "as-available"</strong> basis without warranties of any kind, whether express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+        <p>To the maximum extent permitted by applicable law, Craig Muldoon shall not be liable for:</p>
+        <ul>
+            <li>Any indirect, incidental, special, consequential, or punitive damages arising from your use of SetSync.</li>
+            <li>Any loss of data, profits, or goodwill.</li>
+            <li>Any injury, harm, or loss resulting from training activities, coaching advice, training programs, or feedback delivered through the app.</li>
+            <li>The accuracy of pose estimation, angle measurements, bar path tracking, or any other analysis provided by the app.</li>
+            <li>Any actions taken by coaches or athletes using the app's features.</li>
+            <li>Loss of uploaded videos or data stored on third-party servers.</li>
+        </ul>
+        <p>In no event shall our total liability exceed the amount you paid for SetSync in the twelve (12) months preceding the claim.</p>
+
+        <h2>11. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless Craig Muldoon from any claims, damages, losses, or expenses (including reasonable legal fees) arising from your use of SetSync, your content, or your violation of these Terms. If you are a coach, this includes claims arising from the coaching services you provide through the app.</p>
+
+        <h2>12. Termination</h2>
+        <p>We reserve the right to suspend or terminate access to SetSync or its features at our discretion, including for violation of these Terms. You may stop using the app at any time by deleting it from your device. Upon termination, your right to use the app ceases. Data stored locally on your device will remain until you delete the app. Data stored on our servers (coach features) will be retained in accordance with our <a href="/privacy" class="inline">Privacy Policy</a> and deleted upon request.</p>
+
+        <h2>13. Changes to These Terms</h2>
+        <p>We may update these Terms from time to time. Material changes will be reflected by updating the effective date at the top of this page. Continued use of the app after changes constitutes acceptance of the revised Terms.</p>
+
+        <h2>14. Governing Law</h2>
+        <p>These Terms are governed by the laws of Australia. Any disputes arising from these Terms or your use of SetSync shall be resolved in the courts of New South Wales, Australia.</p>
+
+        <h2>15. Severability</h2>
+        <p>If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary, and the remaining provisions will remain in full force and effect.</p>
+
+        <h2>16. Contact</h2>
+        <p>If you have questions about these Terms, contact us at <a href="mailto:support@setsync.app" class="inline">support@setsync.app</a>.</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 SetSync. All rights reserved.</p>
+            <div>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+                <a href="mailto:support@setsync.app">Support</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

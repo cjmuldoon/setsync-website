@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — SetSync</title>
+    <meta name="description" content="SetSync Privacy Policy. Video analysis stays on your device. Coach features use secure cloud storage.">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <style>
+        :root {
+            --orange: #FF6B00;
+            --blue: #0066FF;
+            --bg: #0A0A0E;
+            --card: #141418;
+            --text: #FFFFFF;
+            --muted: rgba(255,255,255,0.6);
+            --border: rgba(0,102,255,0.2);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 10; }
+        .glow-orange { position: fixed; top: -200px; right: -200px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(255,107,0,0.08) 0%, transparent 70%); pointer-events: none; z-index: 0; }
+        .glow-blue { position: fixed; bottom: -200px; left: -200px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(0,102,255,0.08) 0%, transparent 70%); pointer-events: none; z-index: 0; }
+        .nav-logo-img { height: 36px; width: 36px; object-fit: contain; vertical-align: middle; margin-right: 8px; filter: drop-shadow(0 0 8px rgba(255,107,0,0.3)); }
+
+        /* Nav */
+        nav {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: 3px;
+            background: linear-gradient(90deg, var(--orange), #FF9A40);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            margin-left: 24px;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--orange); }
+
+        /* Content */
+        .legal {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+        .legal .back {
+            display: inline-block;
+            color: var(--orange);
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 32px;
+            transition: opacity 0.2s;
+        }
+        .legal .back:hover { opacity: 0.7; }
+        .legal h1 {
+            font-size: clamp(28px, 5vw, 40px);
+            font-weight: 900;
+            margin-bottom: 8px;
+        }
+        .legal .updated {
+            font-size: 14px;
+            color: var(--muted);
+            margin-bottom: 40px;
+        }
+        .legal h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 36px;
+            margin-bottom: 12px;
+            color: var(--orange);
+        }
+        .legal p {
+            font-size: 15px;
+            color: var(--muted);
+            margin-bottom: 16px;
+        }
+        .legal ul {
+            list-style: none;
+            margin-bottom: 16px;
+            padding-left: 0;
+        }
+        .legal li {
+            font-size: 15px;
+            color: var(--muted);
+            padding: 4px 0;
+        }
+        .legal li::before {
+            content: '- ';
+            color: var(--orange);
+            font-weight: bold;
+        }
+        .legal a.inline {
+            color: var(--blue);
+            text-decoration: none;
+        }
+        .legal a.inline:hover { text-decoration: underline; }
+        .legal strong { color: var(--text); }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 40px 0;
+            text-align: center;
+        }
+        footer p {
+            font-size: 13px;
+            color: var(--muted);
+            margin-bottom: 12px;
+        }
+        footer a {
+            color: var(--muted);
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 13px;
+        }
+        footer a:hover { color: var(--orange); }
+
+        @media (max-width: 600px) {
+            .legal { padding: 40px 20px 60px; }
+        }
+        @media (max-width: 500px) { nav .container { flex-wrap: wrap; gap: 8px; } nav a { margin-left: 0; margin-right: 12px; font-size: 12px; } .logo { font-size: 18px; } .nav-logo-img { height: 28px; width: 28px; } }
+    </style>
+</head>
+<body>
+    <div class="glow-orange"></div>
+    <div class="glow-blue"></div>
+    <nav style="position:relative;z-index:10;">
+        <div class="container">
+            <a href="/" class="logo"><img src="logo-icon.png" class="nav-logo-img" alt="">SET SYNC</a>
+            <div>
+                <a href="/#features">Features</a>
+                <a href="/#pricing">Pricing</a>
+                <a href="mailto:support@setsync.app">Support</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="legal">
+        <a href="/" class="back">&larr; Back to Home</a>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Effective date: 1 April 2026</p>
+
+        <p>SetSync is developed by Craig Muldoon ("we", "us", "our"). This policy explains how the app handles your data. The short version: <strong>all video analysis happens on your device. We only store data on our servers when you use coach features, and we never sell or share your information with third parties.</strong></p>
+
+        <h2>On-Device Data</h2>
+        <p>The core of SetSync runs entirely on your device. The following data is created and stored locally using SwiftData and never leaves your device unless you explicitly choose to share it:</p>
+        <ul>
+            <li>Training sessions, lifts, and workout history</li>
+            <li>Body pose data (19 joints) generated by Apple's Vision framework</li>
+            <li>Bar path tracking data and movement analysis</li>
+            <li>Annotations, angle measurements, and rep counts</li>
+            <li>Video comparison data (side-by-side and overlay)</li>
+        </ul>
+        <p>Your preferences (selected theme, frame rate, onboarding state) are stored in UserDefaults on your device.</p>
+
+        <h2>Device Permissions</h2>
+        <p>SetSync requests the following device permissions, each used solely for the stated purpose:</p>
+        <ul>
+            <li><strong>Camera:</strong> To record training videos at 120fps or 240fps for movement analysis.</li>
+            <li><strong>Photo Library:</strong> To import existing videos from your Photos library for analysis.</li>
+            <li><strong>Microphone:</strong> Optional. To capture audio alongside video recordings. You can deny this permission and still use all video features.</li>
+            <li><strong>Notifications:</strong> To receive alerts about coach feedback. Currently limited to local notifications only (no push notification server is used).</li>
+        </ul>
+
+        <h2>Supabase (Coach Features)</h2>
+        <p>If you use SetSync's coach features, certain data is stored on Supabase servers (hosted on AWS infrastructure). This data is only created when you actively use coach functionality. The following data may be stored:</p>
+        <ul>
+            <li><strong>Coach profiles:</strong> Name, email address, and business name</li>
+            <li><strong>Athlete-coach links:</strong> Athlete name, invite code, and link status</li>
+            <li><strong>Movement templates:</strong> Custom templates created by coaches, including target angle ranges for specific movements</li>
+            <li><strong>Coach ratings:</strong> Scores (1-10 per category) that coaches assign to athlete lifts</li>
+            <li><strong>Athlete submissions:</strong> Lift metadata (movement type, angles, rep count) submitted to a coach for review</li>
+            <li><strong>Coach comments:</strong> Text feedback that coaches provide on athlete submissions</li>
+            <li><strong>Training programs:</strong> Exercise names, sets, reps, and schedules created by coaches</li>
+            <li><strong>Workout completion logs:</strong> Records of completed workouts within a coach's program</li>
+        </ul>
+
+        <h2>Video Uploads</h2>
+        <p>Videos are never uploaded automatically. If you choose to submit a lift to a coach, you may optionally attach a video. Uploaded videos are stored in Supabase Storage with the following constraints:</p>
+        <ul>
+            <li>Maximum file size: 50 MB per video</li>
+            <li>Accepted format: video/mp4 only</li>
+            <li>Videos are stored in a cloud storage bucket accessible to the coach you submitted to</li>
+        </ul>
+        <p>You can request deletion of any uploaded video at any time by contacting us.</p>
+
+        <h2>Data We Do Not Collect</h2>
+        <p>SetSync does not collect personal data, usage analytics, or tracking information. There are no third-party analytics SDKs, no advertising frameworks, no crash reporters, and no telemetry of any kind. We do not use cookies, device fingerprinting, or behavioural profiling.</p>
+
+        <h2>StoreKit (In-App Purchases)</h2>
+        <p>SetSync offers in-app purchases and subscriptions (Pro, Pro+, and Coach tiers). All purchase and subscription data is handled entirely by Apple through StoreKit. SetSync does not collect, process, or store any payment information, credit card details, or Apple ID credentials. We receive only a confirmation that a purchase was made, which is used to unlock features.</p>
+
+        <h2>No Advertising or Tracking</h2>
+        <p>SetSync contains no advertising. We do not sell, rent, share, or trade user data with any third parties. There are no analytics trackers, no advertising identifiers, and no data brokers involved.</p>
+
+        <h2>Data Retention and Deletion</h2>
+        <p>On-device data is retained for as long as the app is installed. You can delete all local data by deleting the SetSync app from your device.</p>
+        <p>For data stored on Supabase (coach features), we retain your data for as long as your account is active. To request deletion of your Supabase-stored data, including coach profiles, submissions, uploaded videos, and any associated records, contact us at <a href="mailto:support@setsync.app" class="inline">support@setsync.app</a>. We will process deletion requests within 30 days.</p>
+
+        <h2>GDPR, CCPA, and Your Rights</h2>
+        <p>Because most data is stored locally on your device, you have direct control over it. For data stored on Supabase, you have the right to:</p>
+        <ul>
+            <li><strong>Access:</strong> Request a copy of the data we hold about you.</li>
+            <li><strong>Correction:</strong> Request correction of inaccurate data.</li>
+            <li><strong>Deletion:</strong> Request deletion of your data from our servers.</li>
+            <li><strong>Portability:</strong> Request your data in a standard format.</li>
+        </ul>
+        <p>To exercise any of these rights, contact us at <a href="mailto:support@setsync.app" class="inline">support@setsync.app</a>.</p>
+
+        <h2>Children's Privacy</h2>
+        <p>SetSync is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal data through the coach features, please contact us and we will delete it promptly.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>If we make material changes to this policy, we will update this page and note the new effective date above. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+        <h2>Contact</h2>
+        <p>If you have questions about this privacy policy, contact us at <a href="mailto:support@setsync.app" class="inline">support@setsync.app</a>.</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 SetSync. All rights reserved.</p>
+            <div>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+                <a href="mailto:support@setsync.app">Support</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

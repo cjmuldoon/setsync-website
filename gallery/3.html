@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetSync — Strength Video Analysis</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&display=swap');
+        :root { --orange: #FF6B00; --blue: #0066FF; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Outfit', sans-serif; background: #0C0C0C; color: #fff; }
+        .wrap { max-width: 1100px; margin: 0 auto; padding: 0 32px; }
+
+        /* Gradient accent bar */
+        .accent-bar { height: 4px; background: linear-gradient(90deg, var(--orange), var(--blue)); }
+
+        nav { padding: 24px 0; }
+        nav .wrap { display: flex; justify-content: space-between; align-items: center; }
+        .brand { display: flex; align-items: center; gap: 12px; }
+        .brand img { width: 36px; height: 36px; filter: drop-shadow(0 0 8px rgba(255,107,0,0.4)); }
+        .brand-text { font-size: 22px; font-weight: 900; text-transform: uppercase; letter-spacing: 2px; }
+        .brand-text span { background: linear-gradient(90deg, var(--orange), var(--blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-right { display: flex; gap: 20px; align-items: center; }
+        .nav-right a { color: #ccc; text-decoration: none; font-size: 14px; font-weight: 600; }
+        .nav-right a:hover { color: #fff; }
+        .dl-btn { background: linear-gradient(135deg, var(--orange), #FF8A30); color: #000; padding: 10px 24px; font-weight: 800; font-size: 13px; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Hero */
+        .hero { padding: 80px 0 60px; position: relative; overflow: hidden; }
+        .hero-bg { position: absolute; top: -100px; right: -200px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(0,102,255,0.08) 0%, transparent 70%); pointer-events: none; }
+        .hero-bg2 { position: absolute; bottom: -100px; left: -100px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255,107,0,0.06) 0%, transparent 70%); pointer-events: none; }
+        .hero-grid { display: grid; grid-template-columns: 1fr auto; gap: 60px; align-items: center; position: relative; z-index: 1; }
+        .hero-tag { display: inline-block; border: 1px solid #333; padding: 6px 14px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; background: linear-gradient(90deg, var(--orange), var(--blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 28px; }
+        .hero h1 { font-size: 64px; font-weight: 900; line-height: 0.95; text-transform: uppercase; letter-spacing: -2px; margin-bottom: 28px; }
+        .hero h1 .outline { -webkit-text-stroke: 2px var(--orange); color: transparent; }
+        .hero h1 .grad { background: linear-gradient(90deg, var(--orange), var(--blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-desc { font-size: 17px; color: #888; max-width: 520px; line-height: 1.7; margin-bottom: 36px; }
+        .hero-ctas { display: flex; gap: 16px; }
+        .cta-big { background: #fff; color: #000; padding: 16px 40px; font-weight: 800; font-size: 14px; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; transition: transform 0.2s; }
+        .cta-big:hover { transform: translateY(-2px); }
+        .cta-ghost { border: 1px solid #333; color: #fff; padding: 16px 40px; font-weight: 600; font-size: 14px; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; }
+        .hero-logo-big { width: 200px; height: 200px; filter: drop-shadow(0 0 30px rgba(255,107,0,0.3)) drop-shadow(0 0 60px rgba(0,102,255,0.2)); }
+        .hero-logo-big img { width: 100%; height: 100%; }
+
+        .rule { border: none; border-top: 1px solid #222; }
+
+        /* Numbers */
+        .numbers { padding: 48px 0; }
+        .numbers .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+        .num-val { font-size: 48px; font-weight: 900; background: linear-gradient(135deg, var(--orange), var(--blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; }
+        .num-label { font-size: 13px; color: #666; text-transform: uppercase; letter-spacing: 1px; margin-top: 8px; }
+
+        /* Features */
+        .features { padding: 64px 0; }
+        .feat-header { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 3px; background: linear-gradient(90deg, var(--orange), var(--blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 40px; padding-bottom: 16px; border-bottom: 1px solid #222; }
+        .feat-row { display: grid; grid-template-columns: 200px 1fr; gap: 0; border-bottom: 1px solid #1A1A1A; padding: 24px 0; transition: padding-left 0.2s; }
+        .feat-row:hover { padding-left: 8px; }
+        .feat-name { font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; background: linear-gradient(90deg, var(--orange), var(--blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .feat-desc { font-size: 15px; color: #888; line-height: 1.6; }
+
+        /* Sports */
+        .sports { padding: 48px 0; text-align: center; }
+        .sport-tags { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+        .sport-tag { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; padding: 10px 24px; border: 1px solid #333; color: #aaa; }
+
+        /* Pricing table */
+        .pricing { padding: 64px 0; }
+        .price-table { width: 100%; border-collapse: collapse; }
+        .price-table th { text-align: left; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; color: #666; padding: 12px 0; border-bottom: 3px solid transparent; border-image: linear-gradient(90deg, var(--orange), var(--blue)) 1; }
+        .price-table td { padding: 16px 0; border-bottom: 1px solid #1A1A1A; font-size: 15px; color: #ccc; }
+        .price-table td:first-child { font-weight: 800; color: #fff; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; }
+        .price-table td:nth-child(2) { font-size: 24px; font-weight: 900; background: linear-gradient(90deg, var(--orange), var(--blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        footer { padding: 32px 0; margin-top: 40px; border-top: 1px solid #1A1A1A; }
+        footer .wrap { display: flex; justify-content: space-between; align-items: center; }
+        footer a, footer p { font-size: 12px; color: #555; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; }
+        .footer-brand { display: flex; align-items: center; gap: 8px; }
+        .footer-brand img { width: 18px; height: 18px; opacity: 0.4; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 42px; }
+            .hero-grid { grid-template-columns: 1fr; text-align: center; }
+            .hero-logo-big { margin: 0 auto 24px; }
+            .hero-ctas { justify-content: center; }
+            .numbers .wrap { grid-template-columns: repeat(2, 1fr); }
+            .feat-row { grid-template-columns: 1fr; gap: 8px; }
+            .nav-right a:not(.dl-btn) { display: none; }
+            .hero-ctas { flex-direction: column; align-items: center; }
+            .hero-desc { margin-left: auto; margin-right: auto; }
+        }
+    </style>
+</head>
+<body>
+    <div class="accent-bar"></div>
+    <nav><div class="wrap">
+        <div class="brand">
+            <img src="../logo-icon.png" alt="SetSync">
+            <div class="brand-text">Set<span>Sync</span></div>
+        </div>
+        <div class="nav-right">
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#" class="dl-btn">Download</a>
+        </div>
+    </div></nav>
+
+    <section class="hero"><div class="wrap">
+        <div class="hero-bg"></div>
+        <div class="hero-bg2"></div>
+        <div class="hero-grid">
+            <div>
+                <div class="hero-tag">Strength Video Analysis</div>
+                <h1>Analyse<br>every <span class="grad">rep</span></h1>
+                <p class="hero-desc">AI pose estimation. Bar path tracking. 4-way comparison. Frame-by-frame at 240fps. For athletes who want data, not guesses.</p>
+                <div class="hero-ctas">
+                    <a href="#" class="cta-big">Download Free</a>
+                    <a href="https://coach.setsync.app" class="cta-ghost">Coach Portal</a>
+                </div>
+            </div>
+            <div class="hero-logo-big"><img src="../logo.png" alt="SetSync"></div>
+        </div>
+    </div></section>
+
+    <hr class="rule">
+
+    <section class="features" id="features"><div class="wrap">
+        <div class="feat-header">Features</div>
+        <div class="feat-row"><div class="feat-name">Virtual Clips</div><div class="feat-desc">Slice individual reps and sets from long session videos — no duplicate files. Mark start and end, or let auto-detection find your lifts.</div></div>
+        <div class="feat-row"><div class="feat-name">Skeleton</div><div class="feat-desc">AI pose estimation tracks 19 body joints through every phase. Automatic knee, hip, elbow, and shoulder angle measurement.</div></div>
+        <div class="feat-row"><div class="feat-name">Bar Path</div><div class="feat-desc">Tap the bar plate. Watch the trajectory trace through your lift. Compare paths between attempts, sessions, or athletes.</div></div>
+        <div class="feat-row"><div class="feat-name">Compare</div><div class="feat-desc">Side-by-side, overlay, or ghost outline. Up to 4 lifts simultaneously with synced playback. Save comparisons to revisit later.</div></div>
+        <div class="feat-row"><div class="feat-name">Form Check</div><div class="feat-desc">AI-powered form feedback against 44 movement templates. View-angle-aware analysis — different checks for side vs front camera.</div></div>
+        <div class="feat-row"><div class="feat-name">Forge</div><div class="feat-desc">Build highlight reels. Stitch clips on a timeline, add skeleton overlays, text, watermark. Export for Instagram, TikTok, or your coach.</div></div>
+        <div class="feat-row"><div class="feat-name">Coach Programs</div><div class="feat-desc">Coaches build structured training programs with sets, reps, and movement targets. Athletes load programs and submit videos against each prescribed lift.</div></div>
+        <div class="feat-row"><div class="feat-name">Coach Portal</div><div class="feat-desc">Full web dashboard for coaches. Review athlete submissions with annotations, track progress over time, manage your entire roster remotely.</div></div>
+        <div class="feat-row"><div class="feat-name">Progress</div><div class="feat-desc">Track joint angles and form scores over time. See trends across sessions. Quantify improvement instead of guessing.</div></div>
+        <div class="feat-row"><div class="feat-name">Capture</div><div class="feat-desc">Record at up to 240fps slow motion directly in the app. Step through frame by frame. See what real-time misses.</div></div>
+    </div></section>
+
+    <section class="sports"><div class="wrap">
+        <div class="sport-tags">
+            <span class="sport-tag">Powerlifting</span>
+            <span class="sport-tag">Olympic Lifting</span>
+            <span class="sport-tag">Strongman</span>
+            <span class="sport-tag">Functional Fitness</span>
+            <span class="sport-tag">Gymnastics</span>
+        </div>
+    </div></section>
+
+    <hr class="rule">
+
+    <section class="pricing" id="pricing"><div class="wrap">
+        <div class="feat-header">Pricing</div>
+        <table class="price-table">
+            <tr><th>Plan</th><th>Price</th><th>Details</th></tr>
+            <tr><td>Free</td><td>$0</td><td>10 analyses, 10 comparisons, watermarked exports</td></tr>
+            <tr><td>Pro</td><td>$7.99</td><td>One-time. Unlimited everything. No watermark.</td></tr>
+            <tr><td>Coach Starter</td><td>$11.99/mo</td><td>Up to 10 athletes, program builder, web portal</td></tr>
+            <tr><td>Coach Pro</td><td>$19.99/mo</td><td>Up to 30 athletes, AI program generation</td></tr>
+        </table>
+    </div></section>
+
+    <hr class="rule">
+
+    <footer><div class="wrap">
+        <div class="footer-brand"><img src="../logo-icon.png" alt=""><p>&copy; 2026 SetSync</p></div>
+        <div><a href="../privacy/">Privacy</a> &nbsp;&middot;&nbsp; <a href="../terms/">Terms</a> &nbsp;&middot;&nbsp; <a href="mailto:support@setsync.app">Support</a></div>
+    </div></footer>
+</body>
+</html>

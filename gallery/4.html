@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetSync — Design 4: Warm Dark</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+        :root { --accent: #E87B35; --accent-soft: rgba(232,123,53,0.12); --bg: #161618; --surface: #1E1E21; --card: #252528; --text: #EAEAEA; --muted: #8E8E93; --border: #2C2C30; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+
+        nav { padding: 16px 0; backdrop-filter: blur(20px); background: rgba(22,22,24,0.8); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--border); }
+        nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 18px; font-weight: 700; }
+        .logo span { color: var(--accent); }
+        .nav-links { display: flex; gap: 28px; }
+        .nav-links a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--text); }
+        .nav-cta { background: var(--accent); color: #fff; padding: 8px 20px; border-radius: 20px; text-decoration: none; font-size: 13px; font-weight: 600; }
+
+        /* Hero — centered, warm */
+        .hero { padding: 100px 0 70px; text-align: center; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--accent-soft); border: 1px solid rgba(232,123,53,0.2); color: var(--accent); font-size: 12px; font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-bottom: 28px; }
+        .hero h1 { font-size: 48px; font-weight: 700; letter-spacing: -1.5px; line-height: 1.15; margin-bottom: 20px; max-width: 640px; margin-left: auto; margin-right: auto; }
+        .hero p { font-size: 17px; color: var(--muted); max-width: 480px; margin: 0 auto 36px; }
+        .hero-btns { display: flex; gap: 12px; justify-content: center; }
+        .btn-warm { background: var(--accent); color: #fff; padding: 13px 28px; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 15px; }
+        .btn-dim { background: var(--card); color: var(--text); padding: 13px 28px; border-radius: 12px; text-decoration: none; font-weight: 500; font-size: 15px; border: 1px solid var(--border); }
+
+        /* App mockup placeholder */
+        .mockup { max-width: 280px; margin: 48px auto 0; background: var(--surface); border: 1px solid var(--border); border-radius: 24px; aspect-ratio: 9/19; display: flex; align-items: center; justify-content: center; }
+        .mockup span { color: var(--muted); font-size: 13px; }
+
+        /* Features — icon-led grid */
+        .features { padding: 80px 0; }
+        .section-head { text-align: center; margin-bottom: 48px; }
+        .section-head h2 { font-size: 32px; font-weight: 700; letter-spacing: -0.5px; }
+        .section-head p { color: var(--muted); font-size: 15px; margin-top: 8px; }
+        .feat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+        .feat { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px; transition: border-color 0.2s; }
+        .feat:hover { border-color: var(--accent); }
+        .feat-emoji { font-size: 28px; margin-bottom: 14px; display: block; }
+        .feat h3 { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
+        .feat p { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+        /* Sports strip */
+        .sports { padding: 40px 0; text-align: center; }
+        .sports-row { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 16px; }
+        .sport-pill { background: var(--surface); border: 1px solid var(--border); padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 500; color: var(--muted); }
+
+        /* Pricing — simple toggle */
+        .pricing { padding: 80px 0; }
+        .price-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+        .p-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px 24px; }
+        .p-card.pop { border-color: var(--accent); position: relative; }
+        .p-card.pop::before { content: 'Most Popular'; position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--accent); color: #fff; font-size: 10px; font-weight: 700; padding: 3px 12px; border-radius: 10px; text-transform: uppercase; letter-spacing: 1px; }
+        .p-tier { font-size: 13px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+        .p-price { font-size: 36px; font-weight: 700; margin: 12px 0 4px; }
+        .p-sub { font-size: 13px; color: var(--muted); margin-bottom: 20px; }
+        .p-list { list-style: none; }
+        .p-list li { font-size: 13px; color: var(--muted); padding: 6px 0; }
+        .p-list li::before { content: '✓ '; color: var(--accent); font-weight: 700; }
+        .p-btn { display: block; text-align: center; margin-top: 24px; padding: 11px; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 14px; }
+        .p-btn.fill { background: var(--accent); color: #fff; }
+        .p-btn.ghost { background: var(--card); color: var(--text); border: 1px solid var(--border); }
+
+        /* Footer */
+        footer { padding: 32px 0; border-top: 1px solid var(--border); margin-top: 40px; }
+        footer .container { display: flex; justify-content: space-between; align-items: center; }
+        footer p, footer a { font-size: 13px; color: var(--muted); text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .feat-grid, .price-cards { grid-template-columns: 1fr; }
+            .hero-btns { flex-direction: column; align-items: center; }
+            .nav-links { display: none; }
+            .mockup { max-width: 200px; }
+        }
+    </style>
+</head>
+<body>
+    <nav><div class="container">
+        <div class="logo">Set<span>Sync</span></div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="https://coach.setsync.app">Coach Portal</a>
+        </div>
+        <a href="#" class="nav-cta">Download</a>
+    </div></nav>
+
+    <section class="hero"><div class="container">
+        <div class="hero-badge">🏋️ Built for strength athletes</div>
+        <h1>Video analysis that actually helps you get stronger</h1>
+        <p>AI pose estimation, bar path tracking, and side-by-side comparison. Record at 240fps, analyse frame by frame.</p>
+        <div class="hero-btns">
+            <a href="#" class="btn-warm">Download for iOS</a>
+            <a href="#features" class="btn-dim">See how it works</a>
+        </div>
+        <div class="mockup"><span>App Preview</span></div>
+    </div></section>
+
+    <section class="features" id="features"><div class="container">
+        <div class="section-head">
+            <h2>Built different</h2>
+            <p>Tools designed by lifters, for lifters</p>
+        </div>
+        <div class="feat-grid">
+            <div class="feat"><span class="feat-emoji">🎥</span><h3>240fps Capture</h3><p>Ultra slow motion for every detail. Frame step forward and back.</p></div>
+            <div class="feat"><span class="feat-emoji">🦴</span><h3>Pose Estimation</h3><p>19-joint AI skeleton overlay. Automatic angle measurement.</p></div>
+            <div class="feat"><span class="feat-emoji">📈</span><h3>Bar Path Tracking</h3><p>Tap the plate, watch the trajectory. Compare between sessions.</p></div>
+            <div class="feat"><span class="feat-emoji">🔀</span><h3>4-Way Compare</h3><p>Side-by-side, overlay, ghost. Sync multiple lifts together.</p></div>
+            <div class="feat"><span class="feat-emoji">🎬</span><h3>Forge Editor</h3><p>Build highlights with overlays, text, and export to social media.</p></div>
+            <div class="feat"><span class="feat-emoji">👨‍🏫</span><h3>Coach Portal</h3><p>Manage athletes, review lifts remotely, build training programs.</p></div>
+        </div>
+    </div></section>
+
+    <section class="sports"><div class="container">
+        <div class="sports-row">
+            <span class="sport-pill">Powerlifting</span>
+            <span class="sport-pill">Olympic Lifting</span>
+            <span class="sport-pill">Strongman</span>
+            <span class="sport-pill">Functional Fitness</span>
+            <span class="sport-pill">Gymnastics</span>
+        </div>
+    </div></section>
+
+    <section class="pricing" id="pricing"><div class="container">
+        <div class="section-head">
+            <h2>Simple pricing</h2>
+            <p>No subscriptions required for athletes</p>
+        </div>
+        <div class="price-cards">
+            <div class="p-card">
+                <div class="p-tier">Free</div>
+                <div class="p-price">$0</div>
+                <div class="p-sub">Get started</div>
+                <ul class="p-list">
+                    <li>Record & compare</li>
+                    <li>10 pose analyses</li>
+                    <li>Watermarked exports</li>
+                </ul>
+                <a href="#" class="p-btn ghost">Download</a>
+            </div>
+            <div class="p-card pop">
+                <div class="p-tier">Pro</div>
+                <div class="p-price">$7.99</div>
+                <div class="p-sub">One-time purchase</div>
+                <ul class="p-list">
+                    <li>Unlimited analyses</li>
+                    <li>Unlimited comparisons</li>
+                    <li>No watermark</li>
+                    <li>All export options</li>
+                </ul>
+                <a href="#" class="p-btn fill">Buy Once</a>
+            </div>
+            <div class="p-card">
+                <div class="p-tier">Coach</div>
+                <div class="p-price">$11.99</div>
+                <div class="p-sub">per month</div>
+                <ul class="p-list">
+                    <li>Everything in Pro</li>
+                    <li>Athlete management</li>
+                    <li>Program builder</li>
+                    <li>Web portal access</li>
+                </ul>
+                <a href="#" class="p-btn ghost">Start Trial</a>
+            </div>
+        </div>
+    </div></section>
+
+    <footer><div class="container">
+        <p>&copy; 2026 SetSync</p>
+        <div><a href="../privacy/">Privacy</a> &nbsp;&middot;&nbsp; <a href="../terms/">Terms</a> &nbsp;&middot;&nbsp; <a href="mailto:support@setsync.app">Support</a></div>
+    </div></footer>
+</body>
+</html>
