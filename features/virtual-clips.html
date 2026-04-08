@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetSync — Virtual Clips</title>
+    <meta name="description" content="One video. Multiple lifts. Zero duplication.">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <style>
+        :root { --orange: #FF6B00; --blue: #4A9EFF; --dark: #0A0A0E; --card: #111115; --text: #E5E5EA; --muted: #8E8E93; --border: #222; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif; background: var(--dark); color: var(--text); }
+        a { color: var(--orange); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        .nav { position: sticky; top: 0; z-index: 50; background: rgba(10,10,14,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 14px 0; }
+        .nav .wrap { display: flex; align-items: center; justify-content: space-between; }
+        .nav-logo { display: flex; align-items: center; gap: 8px; font-size: 18px; font-weight: 800; }
+        .nav-logo span { color: var(--orange); }
+        .nav-links { display: flex; gap: 24px; font-size: 13px; color: var(--muted); }
+        .nav-links a:hover { color: white; text-decoration: none; }
+
+        .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+        .hero { padding: 100px 0 60px; text-align: center; }
+        .hero-tag { display: inline-block; border: 1px solid #333; padding: 6px 14px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: var(--blue); margin-bottom: 20px; }
+        .hero h1 { font-size: 52px; font-weight: 900; line-height: 1.0; text-transform: uppercase; letter-spacing: -1px; margin-bottom: 16px; }
+        .hero h1 span { color: var(--orange); }
+        .hero p { font-size: 18px; color: var(--muted); max-width: 600px; margin: 0 auto; }
+
+        .section { padding: 80px 0; border-top: 1px solid var(--border); }
+        .section:nth-child(even) .section-grid { direction: rtl; }
+        .section:nth-child(even) .section-grid > * { direction: ltr; }
+        .section-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .section-text h2 { font-size: 28px; font-weight: 800; margin-bottom: 16px; text-transform: uppercase; letter-spacing: -0.5px; }
+        .section-text p { font-size: 15px; color: var(--muted); line-height: 1.7; margin-bottom: 20px; }
+        .section-text ul { list-style: none; }
+        .section-text li { font-size: 14px; color: var(--muted); padding: 6px 0; padding-left: 20px; position: relative; }
+        .section-text li::before { content: ''; position: absolute; left: 0; top: 13px; width: 8px; height: 8px; border-radius: 50%; background: var(--orange); }
+
+        .section-image { background: var(--card); border: 1px solid var(--border); border-radius: 16px; aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 13px; }
+
+        .cta { padding: 80px 0; text-align: center; border-top: 1px solid var(--border); }
+        .cta h2 { font-size: 32px; font-weight: 800; margin-bottom: 12px; text-transform: uppercase; }
+        .cta p { color: var(--muted); font-size: 15px; margin-bottom: 24px; }
+        .cta-btn { display: inline-block; background: var(--orange); color: white; font-weight: 700; font-size: 14px; padding: 14px 32px; border-radius: 12px; text-transform: uppercase; letter-spacing: 1px; }
+        .cta-btn:hover { opacity: 0.9; text-decoration: none; }
+
+        .footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: #555; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            .section-grid { grid-template-columns: 1fr; gap: 30px; }
+            .section:nth-child(even) .section-grid { direction: ltr; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav"><div class="wrap">
+        <a href="/" class="nav-logo"><img src="/logo-icon.png" alt="SetSync" width="28" height="28"> <span>SET</span> SYNC</a>
+        <div class="nav-links">
+            <a href="/#features">Features</a>
+            <a href="/#pricing">Pricing</a>
+            <a href="https://coach.setsync.app">Coach Portal</a>
+        </div>
+    </div></nav>
+
+    <div class="hero"><div class="wrap">
+        <div class="hero-tag">Virtual Clips</div>
+        <h1><span>Virtual</span> Clips</h1>
+        <p>One video. Multiple lifts. Zero duplication.</p>
+    </div></div>
+
+    
+    <div class="section"><div class="wrap">
+        <div class="section-grid">
+            <div class="section-text">
+                <h2>Slice reps from session videos</h2>
+                <p>Record a full training session and mark individual reps as virtual clips — no need to trim or duplicate files. One 20-minute video can hold 15+ lifts, each instantly accessible.</p>
+                <ul><li>Mark start and end points manually</li><li>Auto-detection suggests rep boundaries from pose data</li><li>Adjust, accept, or reject detected clips</li><li>Each clip plays as if it were its own video</li></ul>
+            </div>
+            <div class="section-image">virtual-clips-marking.png</div>
+        </div>
+    </div></div>
+    <div class="section"><div class="wrap">
+        <div class="section-grid">
+            <div class="section-text">
+                <h2>Organised by session</h2>
+                <p>Virtual clips stay linked to their source video and training session. Browse by date, movement type, or quality tag. Your library stays clean even with hundreds of lifts.</p>
+                <ul><li>Session grouping with date and notes</li><li>Filter by movement, quality, or status</li><li>Thumbnails auto-generated from key frames</li><li>No storage waste — metadata only</li></ul>
+            </div>
+            <div class="section-image">virtual-clips-library.png</div>
+        </div>
+    </div></div>
+
+    <div class="cta"><div class="wrap">
+        <h2>Ready to level up?</h2>
+        <p>Download SetSync and start analysing your lifts today.</p>
+        <a href="/" class="cta-btn">Get SetSync</a>
+    </div></div>
+
+    <div class="footer"><div class="wrap">
+        SetSync by Craig Muldoon &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a>
+    </div></div>
+</body>
+</html>

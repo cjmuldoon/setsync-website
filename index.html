@@ -59,7 +59,7 @@
         .features { padding: 64px 0; }
         .feat-header { font-size: 14px; font-weight: 900; text-transform: uppercase; letter-spacing: 3px; color: var(--blue); margin-bottom: 40px; padding-bottom: 16px; border-bottom: 1px solid #222; }
         .feat-header.sub-orange { color: var(--orange); }
-        .feat-row { display: grid; grid-template-columns: 200px 1fr; gap: 0; border-bottom: 1px solid #1A1A1A; padding: 24px 0; transition: padding-left 0.2s; }
+        .feat-row { display: grid; grid-template-columns: 200px 1fr; gap: 0; border-bottom: 1px solid #1A1A1A; padding: 24px 0; transition: padding-left 0.2s; text-decoration: none; color: inherit; }
         .feat-row:hover { padding-left: 8px; }
         .feat-name { font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; background: linear-gradient(90deg, var(--orange), #FFa040); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .feat-desc { font-size: 15px; color: #888; line-height: 1.6; }
@@ -594,16 +594,16 @@
 
     <section class="features" id="features"><div class="wrap">
         <div class="feat-header">Features</div>
-        <div class="feat-row"><div class="feat-name">Virtual Clips</div><div class="feat-desc">Slice individual reps and sets from long session videos — no duplicate files. Mark start and end, or let auto-detection find your lifts.</div></div>
-        <div class="feat-row"><div class="feat-name">Skeleton</div><div class="feat-desc">AI pose estimation tracks 19 body joints through every phase. Automatic knee, hip, elbow, and shoulder angle measurement.</div></div>
-        <div class="feat-row"><div class="feat-name">Bar Path</div><div class="feat-desc">Tap the bar plate. Watch the trajectory trace through your lift. Compare paths between attempts, sessions, or athletes.</div></div>
-        <div class="feat-row"><div class="feat-name">Compare</div><div class="feat-desc">Side-by-side, overlay, or ghost outline. Up to 4 lifts simultaneously with synced playback. Save comparisons to revisit later.</div></div>
-        <div class="feat-row"><div class="feat-name">Form Check</div><div class="feat-desc">AI-powered form feedback against 44 movement templates. View-angle-aware analysis — different checks for side vs front camera.</div></div>
-        <div class="feat-row"><div class="feat-name">Forge</div><div class="feat-desc">Build highlight reels. Stitch clips on a timeline, add skeleton overlays, text, watermark. Export for Instagram, TikTok, or your coach.</div></div>
-        <div class="feat-row"><div class="feat-name">Coach Programs</div><div class="feat-desc">Coaches build structured training programs with sets, reps, and movement targets. Athletes load programs and submit videos against each prescribed lift.</div></div>
-        <div class="feat-row"><div class="feat-name">Coach Portal</div><div class="feat-desc">Full web dashboard for coaches. Review athlete submissions with annotations, track progress over time, manage your entire roster remotely.</div></div>
-        <div class="feat-row"><div class="feat-name">Progress</div><div class="feat-desc">Track joint angles and form scores over time. See trends across sessions. Quantify improvement instead of guessing.</div></div>
-        <div class="feat-row"><div class="feat-name">Capture</div><div class="feat-desc">Record at up to 240fps slow motion directly in the app. Step through frame by frame. See what real-time misses.</div></div>
+        <a href="features/virtual-clips.html" class="feat-row"><div class="feat-name">Virtual Clips</div><div class="feat-desc">Slice individual reps and sets from long session videos — no duplicate files. Mark start and end, or let auto-detection find your lifts.</div></a>
+        <a href="features/skeleton.html" class="feat-row"><div class="feat-name">Skeleton</div><div class="feat-desc">AI pose estimation tracks 19 body joints through every phase. Automatic knee, hip, elbow, and shoulder angle measurement.</div></a>
+        <a href="features/bar-path.html" class="feat-row"><div class="feat-name">Bar Path</div><div class="feat-desc">Tap the bar plate. Watch the trajectory trace through your lift. Compare paths between attempts, sessions, or athletes.</div></a>
+        <a href="features/compare.html" class="feat-row"><div class="feat-name">Compare</div><div class="feat-desc">Side-by-side, overlay, or ghost outline. Up to 4 lifts simultaneously with synced playback. Save comparisons to revisit later.</div></a>
+        <a href="features/form-check.html" class="feat-row"><div class="feat-name">Form Check</div><div class="feat-desc">AI-powered form feedback against 44 movement templates. View-angle-aware analysis — different checks for side vs front camera.</div></a>
+        <a href="features/forge.html" class="feat-row"><div class="feat-name">Forge</div><div class="feat-desc">Build highlight reels. Stitch clips on a timeline, add skeleton overlays, text, watermark. Export for Instagram, TikTok, or your coach.</div></a>
+        <a href="features/coach-programs.html" class="feat-row"><div class="feat-name">Coach Programs</div><div class="feat-desc">Coaches build structured training programs with sets, reps, and movement targets. Athletes load programs and submit videos against each prescribed lift.</div></a>
+        <a href="features/coach-portal.html" class="feat-row"><div class="feat-name">Coach Portal</div><div class="feat-desc">Full web dashboard for coaches. Review athlete submissions with annotations, track progress over time, manage your entire roster remotely.</div></a>
+        <a href="features/progress.html" class="feat-row"><div class="feat-name">Progress</div><div class="feat-desc">Track joint angles and form scores over time. See trends across sessions. Quantify improvement instead of guessing.</div></a>
+        <a href="features/capture.html" class="feat-row"><div class="feat-name">Capture</div><div class="feat-desc">Record at up to 240fps slow motion directly in the app. Step through frame by frame. See what real-time misses.</div></a>
     </div></section>
 
     <section class="sports"><div class="wrap">
@@ -623,27 +623,25 @@
         <div class="feat-header sub-orange" style="margin-top:20px">Athletes</div>
         <table class="price-table">
             <tr><th>Plan</th><th>Price</th><th>Details</th></tr>
-            <tr><td>Free Trial</td><td>$0</td><td>Import & record, basic playback, 10 comparisons, 10 analyses, dark & light themes</td></tr>
-            <tr><td>SetSync Pro</td><td>$7.99</td><td>One-time. Unlimited comparisons, pose estimation, bar path, annotations, Forge editor, CSV export, all themes</td></tr>
-            <tr><td>SetSync Pro+</td><td>$2.99/mo</td><td>Everything in Pro + AI form feedback, progress trends, coach sharing, video export with overlays, 44 movement templates. $19.99/year</td></tr>
+            <tr><td>Free</td><td>$0</td><td>Record, import, basic playback, submit to coach with full pose data. Coach programs, reports, and bookings included. 10 comparisons, 10 analyses.</td></tr>
+            <tr><td>SetSync Pro</td><td>$7.99</td><td>One-time. Unlimited comparisons, bar path tracking, annotations, Forge editor, CSV export, all themes.</td></tr>
+            <tr><td>SetSync Pro+</td><td>$2.99/mo</td><td>Everything in Pro + AI form feedback, progress trends, video export with overlays, 44 movement templates. $19.99/year</td></tr>
         </table>
-        <p style="margin-top:16px"><a href="https://athlete.setsync.app" class="cta-ghost" style="display:inline-block; padding:12px 32px; font-size:13px;">Athlete Portal</a></p>
 
-        <div class="feat-header sub-orange" style="margin-top:40px">Coaches</div>
+        <div class="feat-header sub-orange" style="margin-top:40px">Individual Coaches</div>
         <table class="price-table">
             <tr><th>Plan</th><th>Price</th><th>Details</th></tr>
-            <tr><td>Coach Starter</td><td>$11.99/mo</td><td>Up to 10 athletes, custom templates, rate & review lifts, basic annotation. $79.99/year</td></tr>
-            <tr><td>Coach Pro</td><td>$19.99/mo</td><td>Up to 50 athletes, training programs & periodisation, video annotation, progress dashboard. $139.99/year</td></tr>
-            <tr><td>Coach Elite</td><td>$34.99/mo</td><td>Unlimited athletes, team management, everything in Pro, priority support. $249.99/year</td></tr>
+            <tr><td>Coach Starter</td><td>$11.99/mo</td><td>Up to 10 athletes, full portal access, custom templates, rate & review lifts, annotations, 30 AI credits. $79.99/year</td></tr>
+            <tr><td>Coach Pro</td><td>$19.99/mo</td><td>Up to 50 athletes, training programs & periodisation, video annotation, reports, progress dashboard, 100 AI credits. $139.99/year</td></tr>
+            <tr><td>Coach Elite</td><td>$34.99/mo</td><td>Unlimited athletes, everything in Pro, calendar & booking, priority support, 250 AI credits. $249.99/year</td></tr>
         </table>
-        <p style="margin-top:16px"><a href="https://coach.setsync.app" class="cta-ghost" style="display:inline-block; padding:12px 32px; font-size:13px;">Coach Portal</a></p>
 
-        <div class="feat-header sub-orange" style="margin-top:40px">Gyms & Organisations</div>
+        <div class="feat-header sub-orange" style="margin-top:40px">Gyms & Organizations</div>
         <table class="price-table">
             <tr><th>Plan</th><th>Price</th><th>Details</th></tr>
-            <tr><td>Gym Starter</td><td>$49.99/mo</td><td>Up to 3 coaches, 50 athletes, shared branding, centralised billing. $399.99/year</td></tr>
-            <tr><td>Gym Pro</td><td>$99.99/mo</td><td>Up to 10 coaches, 200 athletes, custom branding, analytics dashboard, priority support. $799.99/year</td></tr>
-            <tr><td>Enterprise</td><td>Custom</td><td>Unlimited coaches & athletes, SSO, dedicated support, custom integrations. Contact us.</td></tr>
+            <tr><td>Gym Starter</td><td>$89.99/mo</td><td>Up to 3 coaches, 100 athletes, shared athlete pool, 300 AI credits. Coaches don't need individual subscriptions.</td></tr>
+            <tr><td>Gym Pro</td><td>$179.99/mo</td><td>Up to 10 coaches, 300 athletes, white-label branding, custom logo & colours, 800 AI credits.</td></tr>
+            <tr><td>Gym Enterprise</td><td>Custom</td><td>Unlimited coaches & athletes, full customisation, dedicated support, API access. Contact us.</td></tr>
         </table>
     </div></section>
 
