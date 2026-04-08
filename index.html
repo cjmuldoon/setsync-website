@@ -33,7 +33,7 @@
         .glow-3 { position: fixed; top: 40%; left: -150px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(0,102,255,0.05) 0%, transparent 70%); pointer-events: none; z-index: 0; }
         .glow-4 { position: fixed; bottom: 30%; right: -150px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255,107,0,0.05) 0%, transparent 70%); pointer-events: none; z-index: 0; }
         .hero-grid { display: grid; grid-template-columns: 1fr auto; gap: 60px; align-items: center; position: relative; z-index: 1; }
-        .hero-tag { display: inline-block; border: 1px solid #333; padding: 6px 14px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; background: linear-gradient(90deg, var(--orange), var(--blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 28px; }
+        .hero-tag { display: inline-block; border: 1px solid #333; padding: 6px 14px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: var(--blue); margin-bottom: 28px; }
         .hero h1 { font-size: 64px; font-weight: 900; line-height: 0.95; text-transform: uppercase; letter-spacing: -2px; margin-bottom: 28px; }
         .hero h1 .outline { -webkit-text-stroke: 2px var(--orange); color: transparent; }
         .hero h1 .grad { background: linear-gradient(90deg, var(--orange), var(--blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
@@ -95,7 +95,7 @@
             .hero-logo-big { width: 160px; height: 160px; margin: 24px auto 0; }
             .hero-ctas { justify-content: center; flex-direction: column; align-items: center; }
             .hero-desc { margin-left: auto; margin-right: auto; }
-            .hero-tag { background: none; -webkit-background-clip: unset; -webkit-text-fill-color: var(--orange); color: var(--orange); }
+
             .numbers .wrap { grid-template-columns: repeat(2, 1fr); }
             .feat-row { grid-template-columns: 1fr; gap: 8px; }
             .nav-right a:not(.dl-btn) { display: none; }
