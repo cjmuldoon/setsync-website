@@ -112,6 +112,7 @@
             <a href="#pricing">Pricing</a>
             <a href="https://coach.setsync.app/find">Find a Coach</a>
             <a href="https://coach.setsync.app">Coach Portal</a>
+            <a href="https://athlete.setsync.app">Athlete Portal</a>
             <a href="mailto:support@setsync.app">Support</a>
             <a href="#" class="dl-btn">Download</a>
         </div>
@@ -131,6 +132,7 @@
                 <div class="hero-ctas">
                     <a href="#" class="cta-big">Download Free</a>
                     <a href="https://coach.setsync.app" class="cta-ghost">Coach Portal</a>
+                    <a href="https://athlete.setsync.app" class="cta-ghost">Athlete Portal</a>
                 </div>
             </div>
             <div class="hero-logo-big"><img src="logo.png" alt="SetSync"></div>
@@ -227,69 +229,69 @@
                 <text x="0" y="132" text-anchor="middle" fill="rgba(255,255,255,0.2)" font-size="8" font-family="Outfit,sans-serif" font-weight="600">DEADLIFT</text>
             </g>
 
-            <!-- 2: SQUAT — below parallel, knees bend, hips drop below knees -->
+            <!-- 2: SQUAT — deep below parallel, hips well below knees -->
             <g transform="translate(300,0)" opacity="0.7">
-                <!-- Head -->
+                <!-- Head — drops much lower for deep squat -->
                 <circle cx="0" r="5" fill="none" stroke="var(--blue)" stroke-width="1.5">
-                    <animate attributeName="cy" values="35;62;35" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="cy" values="35;72;35" dur="3s" repeatCount="indefinite"/>
                 </circle>
-                <!-- Torso — leans forward slightly at bottom -->
+                <!-- Torso — leans forward more at bottom -->
                 <line stroke="var(--blue)" stroke-width="1.5">
-                    <animate attributeName="x1" values="0;2;0" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="y1" values="40;67;40" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="x2" values="0;-2;0" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="y2" values="62;88;62" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="x1" values="0;4;0" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="y1" values="40;77;40" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="x2" values="0;-3;0" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="y2" values="62;98;62" dur="3s" repeatCount="indefinite"/>
                 </line>
                 <!-- Arms on bar -->
                 <line stroke="var(--blue)" stroke-width="1.5">
-                    <animate attributeName="x1" values="0;2;0" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="y1" values="44;70;44" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="x2" values="-12;-8;-12" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="y2" values="40;66;40" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="x1" values="0;4;0" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="y1" values="44;80;44" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="x2" values="-12;-6;-12" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="y2" values="40;76;40" dur="3s" repeatCount="indefinite"/>
                 </line>
                 <line stroke="var(--blue)" stroke-width="1.5">
-                    <animate attributeName="x1" values="0;2;0" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="y1" values="44;70;44" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="x2" values="12;12;12" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="y2" values="40;66;40" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="x1" values="0;4;0" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="y1" values="44;80;44" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="x2" values="12;14;12" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="y2" values="40;76;40" dur="3s" repeatCount="indefinite"/>
                 </line>
-                <!-- Thigh L — hip drops BELOW knee at bottom -->
+                <!-- Thigh L — hip drops well BELOW knee at bottom (deep squat) -->
                 <line stroke="var(--blue)" stroke-width="1.5">
-                    <animate attributeName="x1" values="0;-2;0" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="y1" values="62;88;62" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="x2" values="-10;-12;-10" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="y2" values="96;96;96" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="x1" values="0;-3;0" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="y1" values="62;98;62" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="x2" values="-10;-16;-10" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="y2" values="96;90;96" dur="3s" repeatCount="indefinite"/>
                 </line>
-                <!-- Shin L — short -->
+                <!-- Shin L -->
                 <line x2="-10" y2="114" stroke="var(--blue)" stroke-width="1.5">
-                    <animate attributeName="x1" values="-10;-12;-10" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="y1" values="96;96;96" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="x1" values="-10;-16;-10" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="y1" values="96;90;96" dur="3s" repeatCount="indefinite"/>
                 </line>
-                <!-- Thigh R — longer thigh, shorter shin -->
+                <!-- Thigh R — hip drops well BELOW knee -->
                 <line stroke="var(--blue)" stroke-width="1.5">
-                    <animate attributeName="x1" values="0;-2;0" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="y1" values="62;88;62" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="x2" values="10;12;10" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="y2" values="96;96;96" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="x1" values="0;-3;0" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="y1" values="62;98;62" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="x2" values="10;16;10" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="y2" values="96;90;96" dur="3s" repeatCount="indefinite"/>
                 </line>
                 <line x2="10" y2="114" stroke="var(--blue)" stroke-width="1.5">
-                    <animate attributeName="x1" values="10;12;10" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="y1" values="96;96;96" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="x1" values="10;16;10" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="y1" values="96;90;96" dur="3s" repeatCount="indefinite"/>
                 </line>
                 <!-- Barbell + plates -->
                 <line stroke="var(--blue)" stroke-width="2" opacity="0.5">
-                    <animate attributeName="x1" values="-20;-16;-20" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="x2" values="20;20;20" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="y1" values="40;66;40" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="y2" values="40;66;40" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="x1" values="-20;-14;-20" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="x2" values="20;22;20" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="y1" values="40;76;40" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="y2" values="40;76;40" dur="3s" repeatCount="indefinite"/>
                 </line>
                 <rect width="4" height="12" rx="1" fill="none" stroke="var(--blue)" stroke-width="1" opacity="0.4">
-                    <animate attributeName="x" values="-24;-20;-24" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="y" values="34;60;34" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="x" values="-24;-18;-24" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="y" values="34;70;34" dur="3s" repeatCount="indefinite"/>
                 </rect>
                 <rect width="4" height="12" rx="1" fill="none" stroke="var(--blue)" stroke-width="1" opacity="0.4">
-                    <animate attributeName="x" values="20;20;20" dur="3s" repeatCount="indefinite"/>
-                    <animate attributeName="y" values="34;60;34" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="x" values="20;22;20" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="y" values="34;70;34" dur="3s" repeatCount="indefinite"/>
                 </rect>
                 <text x="0" y="132" text-anchor="middle" fill="rgba(255,255,255,0.2)" font-size="8" font-family="Outfit,sans-serif" font-weight="600">SQUAT</text>
             </g>
@@ -317,18 +319,18 @@
                     <animate attributeName="x2" values="6;8;8;4;4;4;6" keyTimes="0;0.35;0.48;0.58;0.72;0.88;1" dur="3.5s" repeatCount="indefinite"/>
                     <animate attributeName="y2" values="90;72;58;58;44;44;90" keyTimes="0;0.35;0.48;0.58;0.72;0.88;1" dur="3.5s" repeatCount="indefinite"/>
                 </line>
-                <!-- Forearms — elbows punch FORWARD at catch -->
+                <!-- Forearms — elbows OUT and DOWN under bar at catch, hands under bar -->
                 <line stroke="var(--orange)" stroke-width="1.5">
                     <animate attributeName="x1" values="-6;-8;-8;-4;-4;-4;-6" keyTimes="0;0.35;0.48;0.58;0.72;0.88;1" dur="3.5s" repeatCount="indefinite"/>
                     <animate attributeName="y1" values="90;72;58;58;44;44;90" keyTimes="0;0.35;0.48;0.58;0.72;0.88;1" dur="3.5s" repeatCount="indefinite"/>
-                    <animate attributeName="x2" values="-6;-6;-6;12;12;12;-6" keyTimes="0;0.35;0.48;0.58;0.72;0.88;1" dur="3.5s" repeatCount="indefinite"/>
-                    <animate attributeName="y2" values="107;80;60;55;42;42;107" keyTimes="0;0.35;0.48;0.58;0.72;0.88;1" dur="3.5s" repeatCount="indefinite"/>
+                    <animate attributeName="x2" values="-6;-6;-6;-8;-8;-8;-6" keyTimes="0;0.35;0.48;0.58;0.72;0.88;1" dur="3.5s" repeatCount="indefinite"/>
+                    <animate attributeName="y2" values="107;80;60;48;42;42;107" keyTimes="0;0.35;0.48;0.58;0.72;0.88;1" dur="3.5s" repeatCount="indefinite"/>
                 </line>
                 <line stroke="var(--orange)" stroke-width="1.5">
                     <animate attributeName="x1" values="6;8;8;4;4;4;6" keyTimes="0;0.35;0.48;0.58;0.72;0.88;1" dur="3.5s" repeatCount="indefinite"/>
                     <animate attributeName="y1" values="90;72;58;58;44;44;90" keyTimes="0;0.35;0.48;0.58;0.72;0.88;1" dur="3.5s" repeatCount="indefinite"/>
-                    <animate attributeName="x2" values="6;6;6;12;12;12;6" keyTimes="0;0.35;0.48;0.58;0.72;0.88;1" dur="3.5s" repeatCount="indefinite"/>
-                    <animate attributeName="y2" values="107;80;60;55;42;42;107" keyTimes="0;0.35;0.48;0.58;0.72;0.88;1" dur="3.5s" repeatCount="indefinite"/>
+                    <animate attributeName="x2" values="6;6;6;8;8;8;6" keyTimes="0;0.35;0.48;0.58;0.72;0.88;1" dur="3.5s" repeatCount="indefinite"/>
+                    <animate attributeName="y2" values="107;80;60;48;42;42;107" keyTimes="0;0.35;0.48;0.58;0.72;0.88;1" dur="3.5s" repeatCount="indefinite"/>
                 </line>
                 <!-- Thighs — dip at catch -->
                 <line stroke="var(--orange)" stroke-width="1.5">
@@ -481,47 +483,46 @@
                 <text x="0" y="132" text-anchor="middle" fill="rgba(255,255,255,0.2)" font-size="8" font-family="Outfit,sans-serif" font-weight="600">SNATCH</text>
             </g>
 
-            <!-- 6: PULL-UP — hangs from platform line, chin above bar at top -->
+            <!-- 6: PULL-UP — hangs from platform line (y=115), chin above at top, taller figure -->
             <g transform="translate(1050,0)" opacity="0.7">
-                <!-- Uses platform line at y=115 as the bar -->
-                <!-- Head — goes from below line to above it -->
+                <!-- Head — from below platform to above it -->
                 <circle cx="0" r="5" fill="none" stroke="var(--blue)" stroke-width="1.5">
-                    <animate attributeName="cy" values="128;108;128" dur="2.5s" repeatCount="indefinite"/>
+                    <animate attributeName="cy" values="125;105;125" dur="2.5s" repeatCount="indefinite"/>
                 </circle>
-                <!-- Torso -->
+                <!-- Torso (longer) -->
                 <line x1="0" x2="0" stroke="var(--blue)" stroke-width="1.5">
-                    <animate attributeName="y1" values="133;113;133" dur="2.5s" repeatCount="indefinite"/>
-                    <animate attributeName="y2" values="152;135;152" dur="2.5s" repeatCount="indefinite"/>
+                    <animate attributeName="y1" values="130;110;130" dur="2.5s" repeatCount="indefinite"/>
+                    <animate attributeName="y2" values="155;132;155" dur="2.5s" repeatCount="indefinite"/>
                 </line>
-                <!-- Arms to bar (platform line at 115) -->
+                <!-- Arms to platform bar (y=115) -->
                 <line x2="-10" y2="115" stroke="var(--blue)" stroke-width="1.5">
                     <animate attributeName="x1" values="0;-2;0" dur="2.5s" repeatCount="indefinite"/>
-                    <animate attributeName="y1" values="136;116;136" dur="2.5s" repeatCount="indefinite"/>
+                    <animate attributeName="y1" values="133;113;133" dur="2.5s" repeatCount="indefinite"/>
                 </line>
                 <line x2="10" y2="115" stroke="var(--blue)" stroke-width="1.5">
                     <animate attributeName="x1" values="0;2;0" dur="2.5s" repeatCount="indefinite"/>
-                    <animate attributeName="y1" values="136;116;136" dur="2.5s" repeatCount="indefinite"/>
+                    <animate attributeName="y1" values="133;113;133" dur="2.5s" repeatCount="indefinite"/>
                 </line>
-                <!-- Legs (hang down) -->
+                <!-- Legs (hang down, longer) -->
                 <line stroke="var(--blue)" stroke-width="1.5">
                     <animate attributeName="x1" values="0;0;0" dur="2.5s" repeatCount="indefinite"/>
-                    <animate attributeName="y1" values="152;135;152" dur="2.5s" repeatCount="indefinite"/>
+                    <animate attributeName="y1" values="155;132;155" dur="2.5s" repeatCount="indefinite"/>
                     <animate attributeName="x2" values="-5;-3;-5" dur="2.5s" repeatCount="indefinite"/>
-                    <animate attributeName="y2" values="168;150;168" dur="2.5s" repeatCount="indefinite"/>
+                    <animate attributeName="y2" values="174;152;174" dur="2.5s" repeatCount="indefinite"/>
                 </line>
                 <line stroke="var(--blue)" stroke-width="1.5">
                     <animate attributeName="x1" values="0;0;0" dur="2.5s" repeatCount="indefinite"/>
-                    <animate attributeName="y1" values="152;135;152" dur="2.5s" repeatCount="indefinite"/>
+                    <animate attributeName="y1" values="155;132;155" dur="2.5s" repeatCount="indefinite"/>
                     <animate attributeName="x2" values="5;3;5" dur="2.5s" repeatCount="indefinite"/>
-                    <animate attributeName="y2" values="168;150;168" dur="2.5s" repeatCount="indefinite"/>
+                    <animate attributeName="y2" values="174;152;174" dur="2.5s" repeatCount="indefinite"/>
                 </line>
                 <text x="0" y="132" text-anchor="middle" fill="rgba(255,255,255,0.2)" font-size="8" font-family="Outfit,sans-serif" font-weight="600">PULL-UP</text>
             </g>
 
             <!-- 7: STRONGMAN — Atlas Stone load -->
             <g transform="translate(1200,0)" opacity="0.7">
-                <!-- Stone (circle) -->
-                <circle r="10" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5">
+                <!-- Stone (circle) — thicker stroke, light grey fill -->
+                <circle r="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.35)" stroke-width="2.5">
                     <animate attributeName="cx" values="0;0;0;0;0" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
                     <animate attributeName="cy" values="104;85;55;55;104" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
                 </circle>
@@ -547,14 +548,33 @@
                     <animate attributeName="x2" values="10;8;6;6;10" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
                     <animate attributeName="y2" values="100;82;58;58;100" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
                 </line>
-                <!-- Legs -->
-                <line stroke="var(--orange)" stroke-width="1.5" x2="-9" y2="114">
+                <!-- Thigh L (hip to knee) — knees bend when picking up stone -->
+                <line stroke="var(--orange)" stroke-width="1.5">
                     <animate attributeName="x1" values="0;0;0;0;0" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
                     <animate attributeName="y1" values="85;78;68;68;85" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
+                    <animate attributeName="x2" values="-10;-12;-8;-8;-10" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
+                    <animate attributeName="y2" values="100;96;90;90;100" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
                 </line>
-                <line stroke="var(--orange)" stroke-width="1.5" x2="9" y2="114">
+                <!-- Shin L (knee to foot) -->
+                <line stroke="var(--orange)" stroke-width="1.5">
+                    <animate attributeName="x1" values="-10;-12;-8;-8;-10" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
+                    <animate attributeName="y1" values="100;96;90;90;100" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
+                    <animate attributeName="x2" values="-9;-10;-8;-8;-9" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
+                    <animate attributeName="y2" values="114;114;114;114;114" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
+                </line>
+                <!-- Thigh R (hip to knee) -->
+                <line stroke="var(--orange)" stroke-width="1.5">
                     <animate attributeName="x1" values="0;0;0;0;0" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
                     <animate attributeName="y1" values="85;78;68;68;85" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
+                    <animate attributeName="x2" values="10;12;8;8;10" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
+                    <animate attributeName="y2" values="100;96;90;90;100" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
+                </line>
+                <!-- Shin R (knee to foot) -->
+                <line stroke="var(--orange)" stroke-width="1.5">
+                    <animate attributeName="x1" values="10;12;8;8;10" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
+                    <animate attributeName="y1" values="100;96;90;90;100" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
+                    <animate attributeName="x2" values="9;10;8;8;9" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
+                    <animate attributeName="y2" values="114;114;114;114;114" keyTimes="0;0.3;0.6;0.85;1" dur="3.5s" repeatCount="indefinite"/>
                 </line>
                 <text x="0" y="132" text-anchor="middle" fill="rgba(255,255,255,0.2)" font-size="8" font-family="Outfit,sans-serif" font-weight="600">STRONGMAN</text>
             </g>
@@ -596,6 +616,7 @@
             <tr><td>SetSync Pro</td><td>$7.99</td><td>One-time. Unlimited comparisons, pose estimation, bar path, annotations, Forge editor, CSV export, all themes</td></tr>
             <tr><td>SetSync Pro+</td><td>$2.99/mo</td><td>Everything in Pro + AI form feedback, progress trends, coach sharing, video export with overlays, 44 movement templates. $19.99/year</td></tr>
         </table>
+        <p style="margin-top:16px"><a href="https://athlete.setsync.app" class="cta-ghost" style="display:inline-block; padding:12px 32px; font-size:13px;">Athlete Portal</a></p>
 
         <div class="feat-header sub-orange" style="margin-top:40px">Coaches</div>
         <table class="price-table">
