@@ -88,15 +88,26 @@
         .footer-brand img { width: 18px; height: 18px; opacity: 0.4; }
 
         @media (max-width: 768px) {
+            body { display: flex; flex-direction: column; }
             .hero h1 { font-size: 42px; }
-            .hero-grid { grid-template-columns: 1fr; text-align: center; }
-            .hero-logo-big { margin: 0 auto 24px; }
-            .hero-ctas { justify-content: center; }
+            .hero { padding: 40px 0 20px; overflow: visible; }
+            .hero-grid { grid-template-columns: 1fr; text-align: center; gap: 0; }
+            .hero-logo-big { width: 160px; height: 160px; margin: 0 auto 20px; }
+            .hero-ctas { justify-content: center; flex-direction: column; align-items: center; }
+            .hero-desc { margin-left: auto; margin-right: auto; }
+            .hero-tag { background: none; -webkit-background-clip: unset; -webkit-text-fill-color: var(--orange); color: var(--orange); }
             .numbers .wrap { grid-template-columns: repeat(2, 1fr); }
             .feat-row { grid-template-columns: 1fr; gap: 8px; }
             .nav-right a:not(.dl-btn) { display: none; }
-            .hero-ctas { flex-direction: column; align-items: center; }
-            .hero-desc { margin-left: auto; margin-right: auto; }
+            .athlete-strip { order: 100; padding: 20px 0 10px; }
+            footer { order: 101; }
+            .price-table { border-collapse: separate; border-spacing: 0; }
+            .price-table thead, .price-table tr th { display: none; }
+            .price-table tr { display: block; border: 1px solid #222; padding: 20px; margin-bottom: 16px; }
+            .price-table td { display: block; width: 100% !important; padding: 4px 0; border: none; }
+            .price-table td:first-child { font-size: 15px; margin-bottom: 4px; }
+            .price-table td:nth-child(2) { font-size: 28px; margin-bottom: 8px; }
+            .price-table td:nth-child(3) { font-size: 14px; line-height: 1.6; }
         }
     </style>
 </head>
@@ -624,6 +635,15 @@
             <tr><td>Coach Starter</td><td>$11.99/mo</td><td>Up to 10 athletes, custom templates, rate & review lifts, basic annotation. $79.99/year</td></tr>
             <tr><td>Coach Pro</td><td>$19.99/mo</td><td>Up to 50 athletes, training programs & periodisation, video annotation, progress dashboard. $139.99/year</td></tr>
             <tr><td>Coach Elite</td><td>$34.99/mo</td><td>Unlimited athletes, team management, everything in Pro, priority support. $249.99/year</td></tr>
+        </table>
+        <p style="margin-top:16px"><a href="https://coach.setsync.app" class="cta-ghost" style="display:inline-block; padding:12px 32px; font-size:13px;">Coach Portal</a></p>
+
+        <div class="feat-header sub-orange" style="margin-top:40px">Gyms & Organisations</div>
+        <table class="price-table">
+            <tr><th>Plan</th><th>Price</th><th>Details</th></tr>
+            <tr><td>Gym Starter</td><td>$49.99/mo</td><td>Up to 3 coaches, 50 athletes, shared branding, centralised billing. $399.99/year</td></tr>
+            <tr><td>Gym Pro</td><td>$99.99/mo</td><td>Up to 10 coaches, 200 athletes, custom branding, analytics dashboard, priority support. $799.99/year</td></tr>
+            <tr><td>Enterprise</td><td>Custom</td><td>Unlimited coaches & athletes, SSO, dedicated support, custom integrations. Contact us.</td></tr>
         </table>
     </div></section>
 
