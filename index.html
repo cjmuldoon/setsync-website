@@ -66,7 +66,8 @@
         .hero h1 .outline { -webkit-text-stroke: 2px var(--orange); color: transparent; }
         .hero h1 .grad { background: linear-gradient(90deg, var(--orange), var(--blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .hero-desc { font-size: 17px; color: #888; max-width: 520px; line-height: 1.7; margin-bottom: 36px; }
-        .hero-ctas { display: flex; gap: 16px; }
+        .dl-note { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--orange); margin-bottom: 14px; }
+        .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
         .cta-big { background: #fff; color: #000; padding: 16px 40px; font-weight: 800; font-size: 14px; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; transition: transform 0.2s; }
         .cta-big:hover { transform: translateY(-2px); }
         .cta-ghost { border: 1px solid #333; color: #fff; padding: 16px 40px; font-weight: 600; font-size: 14px; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; }
@@ -153,7 +154,7 @@
             <a href="https://coach.setsync.app">Coach Portal</a>
             <a href="https://athlete.setsync.app">Athlete Portal</a>
             <a href="mailto:support@setsync.app">Support</a>
-            <a href="#" class="dl-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>Download</a>
+            <a href="#get" class="dl-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-2px;margin-right:6px"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"/></svg>Download</a>
         </div>
     </div></nav>
 
@@ -162,14 +163,18 @@
     <div class="glow-3"></div>
     <div class="glow-4"></div>
 
-    <section class="hero"><div class="wrap">
+    <section class="hero" id="get"><div class="wrap">
         <div class="hero-grid">
             <div>
                 <div class="hero-tag">Strength Video Analysis</div>
                 <h1>Analyse<br>every <span class="outline">rep</span></h1>
                 <p class="hero-desc">AI pose estimation. Bar path tracking. 4-way comparison. For athletes and coaches who train with intent.</p>
+                <div class="dl-note">Free on iPhone &amp; Android</div>
                 <div class="hero-ctas">
-                    <a href="#" class="cta-big"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-3px;margin-right:8px"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>Download Free</a>
+                    <!-- App Store URL goes here once the iOS app clears review -->
+                    <a href="#" class="cta-big"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-3px;margin-right:8px"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>App Store</a>
+                    <!-- Live URL once published: https://play.google.com/store/apps/details?id=com.setsync.app -->
+                    <a href="#" class="cta-big"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-3px;margin-right:8px"><path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.15-.65-.06-.83.22l-1.88 3.24c-2.86-1.21-6.08-1.21-8.94 0L5.65 5.67c-.19-.29-.58-.38-.87-.2-.28.18-.37.54-.22.83L6.4 9.48C3.3 11.25 1.28 14.44 1 18h22c-.28-3.56-2.3-6.75-5.4-8.52M7 15.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25m10 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25"/></svg>Google Play</a>
                     <a href="https://coach.setsync.app" class="cta-ghost">Coach Portal</a>
                     <a href="https://athlete.setsync.app" class="cta-ghost">Athlete Portal</a>
                 </div>
@@ -629,8 +634,9 @@
         <a href="features/form-check.html" class="feat-row"><div class="feat-name">Form Check</div><div class="feat-desc">AI-powered form feedback against 44 movement templates. View-angle-aware analysis — different checks for side vs front camera.</div></a>
         <a href="features/forge.html" class="feat-row"><div class="feat-name">Forge</div><div class="feat-desc">Build highlight reels. Stitch clips on a timeline, add skeleton overlays, text, watermark. Export for Instagram, TikTok, or your coach.</div></a>
         <a href="features/coach-programs.html" class="feat-row"><div class="feat-name">Coach Programs</div><div class="feat-desc">Coaches build structured training programs with sets, reps, and movement targets. Athletes load programs and submit videos against each prescribed lift.</div></a>
-        <a href="features/coach-portal.html" class="feat-row"><div class="feat-name">Coach Portal</div><div class="feat-desc">Full web dashboard for coaches. Review athlete submissions with annotations, track progress over time, manage your entire roster remotely.</div></a>
-        <a href="features/progress.html" class="feat-row"><div class="feat-name">Progress</div><div class="feat-desc">Track joint angles and form scores over time. See trends across sessions. Quantify improvement instead of guessing.</div></a>
+        <a href="features/coach-portal.html" class="feat-row"><div class="feat-name">Coach Portal</div><div class="feat-desc">Full web dashboard for coaches. Review athlete submissions, track progression and fatigue signals, manage programs, and run your entire roster remotely.</div></a>
+        <a href="features/progress.html" class="feat-row"><div class="feat-name">Progress</div><div class="feat-desc">Track weight progression, volume load, RPE, bar velocity, and form scores over time. Fatigue alerts flag overreaching. One-click suggestions adjust the program.</div></a>
+        <div class="feat-row"><div class="feat-name">Weight Tracking</div><div class="feat-desc">Auto-detect plate weight from competition colours and OCR. Sets grouped automatically by rest periods. RPE calculated from velocity loss. Log everything against your program.</div></div>
         <a href="features/capture.html" class="feat-row"><div class="feat-name">Capture</div><div class="feat-desc">Record at up to 240fps slow motion directly in the app. Step through frame by frame. See what real-time misses.</div></a>
     </div></section>
 
