@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Your Account · SetSync</title>
+    <meta name="description" content="How to request deletion of your SetSync account and all associated data.">
+    <link rel="canonical" href="https://setsync.app/delete-account/">
+    <meta property="og:title" content="Delete Your Account · SetSync">
+    <meta property="og:description" content="How to request deletion of your SetSync account and all associated data.">
+    <meta property="og:url" content="https://setsync.app/delete-account/">
+    <meta property="og:image" content="https://setsync.app/og-image.png">
+    <meta property="og:type" content="article">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <style>
+        :root {
+            --orange: #FF6B00;
+            --blue: #0066FF;
+            --bg: #0A0A0E;
+            --card: #141418;
+            --text: #FFFFFF;
+            --muted: rgba(255,255,255,0.6);
+            --border: rgba(0,102,255,0.2);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 10; }
+        .glow-orange { position: fixed; top: -200px; right: -200px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(255,107,0,0.08) 0%, transparent 70%); pointer-events: none; z-index: 0; }
+        .glow-blue { position: fixed; bottom: -200px; left: -200px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(0,102,255,0.08) 0%, transparent 70%); pointer-events: none; z-index: 0; }
+        .nav-logo-img { height: 36px; width: 36px; object-fit: contain; vertical-align: middle; margin-right: 8px; filter: drop-shadow(0 0 8px rgba(255,107,0,0.3)); }
+
+        /* Nav */
+        nav {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: 3px;
+            background: linear-gradient(90deg, var(--orange), #FF9A40);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+        nav a {
+            color: var(--muted);
+            text-decoration: none;
+            margin-left: 24px;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: var(--orange); }
+
+        /* Content */
+        .legal {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+        .legal .back {
+            display: inline-block;
+            color: var(--orange);
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 32px;
+            transition: opacity 0.2s;
+        }
+        .legal .back:hover { opacity: 0.7; }
+        .legal h1 {
+            font-size: clamp(28px, 5vw, 40px);
+            font-weight: 900;
+            margin-bottom: 8px;
+        }
+        .legal .updated {
+            font-size: 14px;
+            color: var(--muted);
+            margin-bottom: 40px;
+        }
+        .legal h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 36px;
+            margin-bottom: 12px;
+            color: var(--orange);
+        }
+        .legal p {
+            font-size: 15px;
+            color: var(--muted);
+            margin-bottom: 16px;
+        }
+        .legal ul {
+            list-style: none;
+            margin-bottom: 16px;
+            padding-left: 0;
+        }
+        .legal li {
+            font-size: 15px;
+            color: var(--muted);
+            padding: 4px 0;
+        }
+        .legal li::before {
+            content: '- ';
+            color: var(--orange);
+            font-weight: bold;
+        }
+        .legal a.inline {
+            color: var(--blue);
+            text-decoration: none;
+        }
+        .legal a.inline:hover { text-decoration: underline; }
+        .legal strong { color: var(--text); }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 40px 0;
+            text-align: center;
+        }
+        footer p {
+            font-size: 13px;
+            color: var(--muted);
+            margin-bottom: 12px;
+        }
+        footer a {
+            color: var(--muted);
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 13px;
+        }
+        footer a:hover { color: var(--orange); }
+
+        @media (max-width: 600px) {
+            .legal { padding: 40px 20px 60px; }
+        }
+        @media (max-width: 500px) { nav .container { flex-wrap: wrap; gap: 8px; } nav a { margin-left: 0; margin-right: 12px; font-size: 12px; } .logo { font-size: 18px; } .nav-logo-img { height: 28px; width: 28px; } }
+    </style>
+</head>
+<body>
+    <div class="glow-orange"></div>
+    <div class="glow-blue"></div>
+    <nav style="position:relative;z-index:10;">
+        <div class="container">
+            <a href="/" class="logo"><img src="logo-icon.png" class="nav-logo-img" alt="">SET SYNC</a>
+            <div>
+                <a href="/#features">Features</a>
+                <a href="/#pricing">Pricing</a>
+                <a href="mailto:support@setsync.app">Support</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="legal">
+        <a href="/" class="back">&larr; Back to Home</a>
+        <h1>Delete Your Account and Data</h1>
+        <p class="updated">Effective date: 26 July 2026</p>
+
+        <p>Most of SetSync works entirely on your device and does not require an account. You only create a SetSync account if you use the optional coach features. If you have an account, you can ask us to delete it and all associated data at any time.</p>
+
+        <h2>How to request deletion</h2>
+        <p>Email <a href="mailto:support@setsync.app?subject=Delete%20my%20account">support@setsync.app</a> with the subject "Delete my account". Please send your request from the same email address you use to sign in, so we can verify it belongs to you.</p>
+        <p>We action verified requests within 30 days and confirm by email once the deletion is complete.</p>
+
+        <h2>What is deleted</h2>
+        <ul>
+            <li>Your account and sign-in credentials (email address)</li>
+            <li>Your athlete profile and any coach links</li>
+            <li>Workout and set logs stored on our servers</li>
+            <li>Any lift submissions, comments, and program progress tied to your account</li>
+            <li>Any videos you chose to upload to a coach</li>
+        </ul>
+
+        <h2>What stays on your device</h2>
+        <p>Videos, body pose data, bar path data, and analysis created in the app are stored only on your device and are never uploaded. We do not hold this data, and it is removed when you delete the app or clear its data from your device.</p>
+
+        <h2>Data we may retain</h2>
+        <p>We do not keep personal data after deletion except where required to meet legal, tax, or fraud prevention obligations. Any such records are held only as long as the law requires and are not used for any other purpose.</p>
+
+        <p>Questions about this process? Contact <a href="mailto:support@setsync.app">support@setsync.app</a>.</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 SetSync &middot; ASSET ARC SERVICES &middot; ABN 41 633 204 015. All rights reserved.</p>
+            <div>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+                <a href="mailto:support@setsync.app">Support</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
