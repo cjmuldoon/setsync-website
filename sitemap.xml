@@ -2,67 +2,107 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://setsync.app/</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://setsync.app/privacy/</loc>
-    <lastmod>2026-04-09</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://setsync.app/terms/</loc>
-    <lastmod>2026-04-09</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
     <loc>https://setsync.app/features/bar-path.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://setsync.app/features/capture.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://setsync.app/features/coach-portal.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-08-09</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://setsync.app/features/coach-programs.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://setsync.app/features/compare.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://setsync.app/features/forge.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://setsync.app/features/form-check.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-08-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://setsync.app/features/progress.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-08-09</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://setsync.app/features/skeleton.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-08-07</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://setsync.app/features/virtual-clips.html</loc>
-    <lastmod>2026-04-09</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://setsync.app/blog/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://setsync.app/blog/bar-path-explained/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://setsync.app/blog/coaching-lifters-remotely/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://setsync.app/blog/compare-lifts-side-by-side/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://setsync.app/blog/frame-rate-for-lifting-video/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://setsync.app/blog/how-to-film-your-lifts/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://setsync.app/blog/velocity-based-training-explained/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://setsync.app/delete-account/</loc>
+    <lastmod>2026-07-28</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://setsync.app/privacy/</loc>
+    <lastmod>2026-07-28</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://setsync.app/terms/</loc>
+    <lastmod>2026-07-28</lastmod>
+    <priority>0.3</priority>
   </url>
 </urlset>
